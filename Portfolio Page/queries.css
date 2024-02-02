@@ -1,0 +1,99 @@
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+@media only screen and (max-width: 1200px) {
+	.header-text-box {
+		width: 100%;
+		padding: 0 2%;
+	}
+
+	.row { padding: 0 2%; }
+}
+
+
+/* Small tablet to big tablet from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+	body { font-size: 18px }
+	section { padding: 60px 0; }
+
+	.about-me-text,
+	.contact-me-text { 
+		width: 80%;
+		margin-left: 10%;
+		text-align: center;
+	}
+
+	.education-text-one,
+	.education-text-two {
+		max-width: 40%;
+	}
+}
+
+
+/* Small phones and small tablets: from 481 to 767px; */
+@media only screen and (max-width: 767px) {
+	body { font-size: 16px }
+	section { padding: 30px 0; }
+
+	.row,
+	.header-text-box { padding: 0 4%; }
+
+	.col {
+		width: 100%;
+		margin: 0 0 4% 0;
+	}
+
+	.main-nav { display: none; }
+	.mobile-nav { display: inline-block; }
+
+	.main-nav {
+		float: left;
+		margin-top: 30px;
+		margin-left: 25px;
+	}
+
+	.main-nav li { display: block; }
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+
+	.sticky .main-nav { margin-top: 10px; }
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited { padding: 10px 0; }
+	.sticky .mobile-nav { margin-top: 10px; }
+
+	h1 { font-size: 180%; }
+	h2 { font-size: 150%; }
+
+}
+
+/* Small phones from: 0 to 480px */
+@media only screen and (max-width: 480px) {
+	
+
+
+	/*.small-screen-row-1 {
+		width: 100%;
+		display: inline-block;
+		margin-top: 20%;
+	}
+
+	.profile-picture {
+		margin: 25% auto;
+		height: 100px;
+		width: 100px;
+		margin: 0 auto;
+	}*/
+}
+
+
+
+
+
+
+
+

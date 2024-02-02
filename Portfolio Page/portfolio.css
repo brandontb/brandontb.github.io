@@ -1,0 +1,430 @@
+/*-------- LIGHT BLUE COLOR: #0ea2f2; --------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: #555;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------------------------------------*/
+/* REUSABLES */
+/*-----------------------------------------------------------------------*/
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 80px 0;
+}
+
+a:focus { outline: none; }
+
+/*-----------------------------------------------------------------------*/
+/* HEADINGS */
+/*-----------------------------------------------------------------------*/
+
+h1,
+h2 {
+	font-weight: 300;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 160%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	line-height: 130%;
+
+}
+
+h2 {
+	color: #fff;
+	font-size: 140%;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #0ea2f2;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/*-----------------------------------------------------------------------*/
+/* HEADER */
+/*-----------------------------------------------------------------------*/
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/img/computer-image.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.header-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*-------- BUTTONS --------*/
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	color: #fff;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #0ea2f2;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #0ea2f2;
+	color: #0ea2f2;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid #0ea2f2;
+	color: #fff;
+}
+
+#button-two {
+	margin-left: 30px;
+}
+
+/*-------- MAIN-NAV --------*/
+
+.main-nav {
+	margin: 20px 20px;
+	float: right;
+	list-style: none;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+	letter-spacing: 1px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: solid 2px transparent;
+	transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: solid 2px #0ea2f2;
+}
+
+/*-------- STICKY-NAV --------*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 16px 0;
+	color: #fff;
+}
+
+/*-------- MOBILE-NAV --------*/
+
+.mobile-nav {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav ion-icon {
+	font-size: 200%;
+	color: #fff;
+}
+
+/*-----------------------------------------------------------------------*/
+/* ABOUT ME */
+/*-----------------------------------------------------------------------*/
+
+.about-me-section {
+	background-color: black;
+}
+
+#about-me:focus { outline: none; }
+
+.profile-picture {
+	display: block;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 20px auto;
+	border: 2px solid #0ea2f2;
+	transform: scale(1.0);
+	transition: transform 0.3s;
+}
+
+.profile-picture:hover {
+	transform: scale(1.15);
+}
+
+.icons-row {
+	text-align: center;
+	margin: 20px auto;
+	list-style: none;
+}
+
+.icons-row li {
+	display: inline-block;
+	margin: 0 40px;
+}
+
+.icons-row li ion-icon {
+	position: relative;
+	bottom: 75px;
+	font-size: 200%;
+	color: #0ea2f2;
+	transform: scale(1.0);
+	transition: transform 0.3s;
+}
+
+.icons-row li ion-icon:hover {
+	transform: scale(1.50);
+}
+
+.about-me-text {
+	color: #fff;
+	text-align: center;
+}
+
+.contact-me-text {
+	color: #fff;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+/*-----------------------------------------------------------------------*/
+/* EDUCATION */
+/*-----------------------------------------------------------------------*/
+
+.education-section {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(resources/img/pirate-flag.svg.png);	
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	position: relative;
+}
+
+#education:focus { outline: none; }
+
+.education-section h2 {
+	margin-top: 0;
+	margin-bottom: 40px;
+	padding-top: 20px;
+}
+
+.education-text-one {
+	float: left;
+	max-width: 30%;
+	line-height: 150%;
+	margin-left: 40px;
+	color: #fff;
+}
+
+.education-text-two {
+	float: right;
+	max-width: 30%;
+	line-height: 150%;
+	margin-right: 40px;
+	color: #fff;
+}
+
+.ecu {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#button-ecu {
+
+}
+
+.purple-yellow {
+	background: linear-gradient(rgba(95, 28, 140, 0.7), rgba(165, 139, 19, 0.7)), url(resources/img/pirate-flag.svg.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+/*-----------------------------------------------------------------------*/
+/* INTERESTS */
+/*-----------------------------------------------------------------------*/
+
+.interests-section {
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+#interests:focus { outline: none; }
+
+.coding-background {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resources/img/coding2.jpg);
+}
+
+.learning-background {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resources/img/learning.jpg);
+}
+
+.reading-background {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resources/img/reading.jpg)
+}
+
+.surfing-background {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resources/img/surfing.jpg);
+}
+
+.interests-section h2 {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.interests-section .row p {
+	line-height: 200%;
+}
+
+.col {
+	/*margin-left: 0;*/
+}
+
+.coding,
+.learning,
+.reading,
+.surfing {
+	color: #878787;
+	transition: color 1s;
+}
+
+.coding:hover,
+.coding:active {
+	color: #fff;
+}
+
+.learning:hover,
+.learning:active {
+	color: #fff;
+}
+
+.reading:hover,
+.reading:active {
+	color: #fff;
+}
+
+.surfing:hover,
+.surfing:active {
+	color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/* ANIMATIONS */
+/*-----------------------------------------------------------------------*/
+
+.js--fade-in {
+	opacity: 0;
+	animation-duration: 3s;
+}
+
+.js--wp-1 {
+	opacity: 0;
+	animation-duration: 3s;
+}
+
+.js--wp-2 {
+	opacity: 0;
+	animation-duration: 5s;
+}
+
+.fade-in {
+	animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+	
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

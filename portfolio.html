@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="vendors/css/normalize.css">
+	<link rel="stylesheet" href="vendors/css/grid.css">
+	<link rel="stylesheet" href="vendors/css/animate.css">
+	<link rel="stylesheet" href="portfolio.css">
+	<link rel="stylesheet" href="queries.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">	
+	<title>Portfolio Page</title>
+
+</head>
+
+<body>
+
+	<header>
+		
+		<nav>
+			<div class="row">
+				<ul class="main-nav js--main-nav">
+					<li><a href="#about-me">About Me</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#interests">Interests</a></li>
+				</ul>
+				<a class="mobile-nav js--mobile-nav"><ion-icon name="menu"></ion-icon></a>
+			</div>
+		</nav>
+
+		<div class="header-text-box">
+			<h1>Hello! Welcome <br>to my portfolio page.</h1>
+			<a class="btn btn-ghost js--fade-in" href="https://www.linkedin.com/in/brandon-bobbitt-37396515b/" target="_blank">LinkedIn</a>
+			<a class="btn btn-ghost js--fade-in" id="button-two" href="#">Contact Info</a>
+		</div>
+
+	</header>
+
+
+	<section class="about-me-section js--sticky-nav" id="about-me">
+		
+		<div class="row">
+			<h2>About Me</h2>
+			<p class="about-me-text">
+				Hello, my name is Brandon Bobbitt and I am an aspiring front end web developer. I currently use HTML5, CSS3, JavaScript, and jQuery but am very interested in other languages and hope to learn more as I progress as a developer. 
+			</p>
+		</div>
+
+		<div class="row js--wp-1">
+			<ul class="icons-row">
+				<li><ion-icon name="logo-html5"></ion-icon></li>
+				<li><ion-icon name="logo-css3"></ion-icon></li>
+				<li><img src="resources/img/portfolio-profile.png" alt="Brandon Bobbitt" class="profile-picture"></li>
+				<li><ion-icon name="logo-javascript"></ion-icon></li>
+				<li><ion-icon name="browsers"></ion-icon></li>
+				
+			</ul>
+		</div>
+
+		<div class="row">
+			<p class="contact-me-text">I have been largely self-taught by using websites such as FreeCodeCamp and Codecademy. I have also enrolled and completed multiple courses and projects dealing with front-end development on the educational site Udemy.
+			</p>
+		</div>
+
+	</section>
+
+
+	<section class="education-section js--purple-yellow" id="education">
+		<h2>Education</h2>
+		<div class="row education-text-one">
+			<p>I attended East Carolina University where I received a Bachelor's degree in Business Administration with a concentration in Business Management and Entrepreneurship. </p>
+		</div>
+
+		<div class="row education-text-two">
+			<p>While enrolled at East Carolina I took an interest in computer science and enrolled in a few computer science classes that taught me the basics of programming in languages like HTML, CSS, and Java. After taking these courses I decided I had an interest in programming and decided to try and learn programming on my own time.</p>
+		</div>
+		
+		<div class="row ecu">
+			<a class="btn btn-ghost js--wp-2" id="button-ecu" href="#education">Go Pirates</a>
+		</div>
+		
+
+	
+	</section>
+
+
+	<section class="interests-section js--background" id="interests">
+		<div class="row">
+			<h2>Interests</h2>
+		</div>
+
+		<div class="row">
+			<div class="col span-1-of-4">
+				<p class="coding">One of my favorite interests is coding and learning new things like different languages and libraries. I primarily focus on writing front-end code but am still interested in learning a back-end language one day.</p>
+			</div>
+			<div class="col span-1-of-4">
+				<p class="learning">I enjoy learning new things in my free time about a varitey of different subjects. I enjoy learning and knowing different things each day.</p>
+			</div>
+			<div class="col span-1-of-4">
+				<p class="reading">Another interest of mine is reading. I enjoy reading non-fiction and fiction and try to always be reading some kind of book. I enjoy reading books on subjects like philosophy, psychology, and science.</p>
+			</div>
+			<div class="col span-1-of-4">
+				<p class="surfing">Surfing is a big interest of mine and I enjoy getting down to the beach during the summer when the waves are good and spending all day surfing. </p>
+			</div>
+		</div>
+
+	</section>
+
+
+
+<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
